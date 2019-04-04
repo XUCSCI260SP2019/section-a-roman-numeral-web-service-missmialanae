@@ -7,8 +7,21 @@ import java.util.*;
 
 @RestController
 public class CustomerController {
+
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
-    @GetMapping("/")
-    public
+    @GetMapping("/decode/{id}")
+
+    public ResponseSingleDecode encode(@PathVariable("id") String num) {
+
+        RomanNumeral converter = new RomanNumeral();
+
+        ResponseSingleDecode response = new ResponseSingleDecode();
+
+        response.setNumber(converter.decode(num));
+
+        return response;
+    }
+
+
 }// end Controller
