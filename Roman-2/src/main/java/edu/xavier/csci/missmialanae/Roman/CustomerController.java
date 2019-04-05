@@ -11,10 +11,10 @@ public class CustomerController {
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     @GetMapping("/decode/{id}")
-
     public ResponseSingleDecode encode(@PathVariable("id") String num) {
 
         RomanNumeral converter = new RomanNumeral();
+
 
         ResponseSingleDecode response = new ResponseSingleDecode();
 
