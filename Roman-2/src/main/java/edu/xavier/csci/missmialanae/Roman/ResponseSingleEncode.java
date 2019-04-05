@@ -7,8 +7,8 @@ public class ResponseSingleEncode {
         return s;
     }
 
-    public void setString(String word){
-        s = word;
+    public void setString(String w){
+        s = w;
     }
 
 }
